@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="UTF-8">
+            <meta name="description" content="Home of Sample Based Music"> 
+            <meta name="author" content="Adrian Guzman"> 
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+    
+    
+    <title>Sample Based: Order</title>
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <h1>Sample Based </h1>
+        <p>Learn about Plunderphonics and Audio Collage</p>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+                <li><a href="index.html">Intro: Sample Based Works</a></li>
+                <li><a href="artists.html">Artists in the Genre</a></li>
+                <li><a href="imagegallery.html">Image Gallery</a></li>
+                <li class="active"><a href="delivery.html">Order</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Request an Order</h1>
+            <form method="get" class="myForm" action="thanks.html">
+           <fieldset>
+               <legend>Customer Information</legend>
+            <label>
+            First Name* <input type="text" name="fname" required> 
+            </label>
+            <label>
+            Last Name* <input type="text" name="lname" required> 
+            </label>
+            <label>
+            Cell Number* <input type="tel" name="phone" required> 
+            </label>
+            <label>
+            E-Mail* <input type="email" name="email"  required>  
+            </label>
+                </fieldset>
+                
+            <fieldset> 
+                <legend>Item Options</legend>
+                <label><input type="checkbox" name="casette" value="yes"> Casette Mystery Box (20$)</label>
+                  <label><input type="checkbox" name="deck" value="yes"> CD Mystery Box (25$)</label> 
+                  <label><input type="checkbox" name="driveway" value="yes"> Vinyl Mystery Box (30$)</label> 
+                  <label><input type="checkbox" name="poster" value="yes"> Poster Mystery Box (20$)</label> 
+                </fieldset>
+     <fieldset>
+                <legend>Delivery Priority</legend>
+                   <label> 
+                       <input type="radio" name="method" value="high_priority">High Priority (2 days)
+                    </label>
+                   <label> 
+                       <input type="radio" name="method" value="normal_priority">Normal Priority (4-5 days)
+                </label>
+                    <label> 
+                       <input type="radio" name="method" value="low_priority">Lowest Priority (6+ days)
+                    </label>
+            </fieldset>
+            <fieldset>
+                    <label> Preferred Delivery Time of Day
+                <select name="time">
+                    <option value="none">Please Select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00 and 2:00pm</option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm</option>
+                    <option value="evening">Between 5:00pm and 8:00pm</option>
+                                    
+                </select>
+                </label>
+
+            </fieldset>    
+                
+                <label>Comments
+                    <textarea name="comments"> </textarea>
+                </label>
+                
+                
+                    <input type="submit" value="Send Delivery Request">
+            </form>
+        
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+       <p><a href="mailto:adrianguzman7676@gmail.com">Email Me</a> &copy; 2023 &bull;Adrian Guzman &bull; <a href="#top">Jump to Top</a>
+            </p>
+    </footer>
+</body>
+</html>
