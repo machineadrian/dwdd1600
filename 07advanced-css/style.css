@@ -1,0 +1,232 @@
+/* CSS PAGE FOR SAMPLE BASED 
+
+dark blue: #024873
+pink: #e75480
+cream: #F9F7EA = BACKGROUND COLOR & USED FOR INVERSION ON NAV BAR 
+light grey: #efefef
+red: rgb(239,0,24)
+                            */
+/*prevent problems with different browsers*/
+*{box-sizing: border-box;}
+
+
+body {
+   font-family: 'Gabarito', sans-serif;
+    font-size: 16px; 
+    font-weight:300;
+    margin: 0;
+    background-color: #F9F7EA;
+
+}
+
+                                            /*HEADER CONTROLS*/
+header {
+    background-color: #F9F7EA;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+header h1 {
+    margin: 0;
+    color: #024873;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-left:1vw;
+}
+
+header p{
+    margin: 0; 
+    color: #024873;
+    padding-left:1vw;
+    
+}
+
+
+
+
+
+
+/* small screens */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0; 
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+    nav a{
+        
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700; 
+        text-transform: uppercase;
+        text-align: center; 
+        border-bottom: solid 1px #aaa; 
+        color: #024873;
+    }
+    nav .active a {
+        background-color: #024873; 
+        color: white; 
+        background-image: linear-gradient(#024873, #000); 
+    }
+}/*end of the media query*/
+
+/*larger screens*/
+@media only screen and (min-width: 801px) {
+                                            /*NAV CONTROLS*/
+nav {
+     margin: 0;
+    background-color:#efefef;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav ul li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #024873;
+    font-weight:700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #024873;
+        color: #F9F7EA;
+}
+nav a:hover {
+    color: #e75480;
+    
+}
+    
+}/*end of the media query*/
+
+
+
+
+
+
+
+
+            /* MAIN DECOR */
+main {
+        padding: 1rem 2vw;
+        background-color: #F9F7EA;
+}
+main h1{
+    color: #024873;
+}
+main h2{
+    color: #024873;
+    margin-bottom: .2rem;
+}
+main p{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+main ol {
+    padding: .5rem 3vw;
+    background-color: #efefef;
+}
+main dl dt {
+    color: black;
+    font-weight: 700;
+    
+}
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+}
+main ul {
+    list-style-type:square;
+}
+
+main ul li {
+    color: black;
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+main address {
+    font-style: normal;
+    background-color:#F9F7EA;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+}
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 2%; 
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%; 
+    height: auto;
+}
+
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery img:hover{
+    box-shadow: 4px 4px 10px black; 
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0; 
+}
+
+div.gallery figcaption {
+    text-align: center;
+  /*  font-size .8rem; i was getting errors on my css validator and deleting this value had no obvious change... dunno. */   
+    color: #000;
+}
+
+.hero {
+    width: 100%;
+    margin: 0; 
+}
+.hero img {
+    width: 100%;
+    height: auto; 
+    padding-bottom: 2rem;
+}
+
+                                        /*LINK CONTROLS*/
+main a{
+    color: #e75480;
+}
+main a:hover{
+    color: rgb(239,0,24);
+}
+
+                                        /*FOOTER DECORATION*/
+footer{
+    background-color: #F9F7EA;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0; 
+    font-size: .8rem; 
+}
+footer a{
+    color: #e75480;
+}
+
+header, nav, main, footer{
+    max-width: 80rem;
+    margin: 0 auto; 
+}
